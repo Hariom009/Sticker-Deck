@@ -1,25 +1,8 @@
-//
-//  ContentView.swift
-//  Sticker Deck
-//
-//  Created by Hari's Mac on 12.10.2026.
-//
-
 import SwiftUI
-// initial
 
 struct ContentView: View {
+    let model: StickerLibraryViewModel
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        StickerLibraryView(model: model)
     }
-}
-
-#Preview {
-    ContentView()
 }
